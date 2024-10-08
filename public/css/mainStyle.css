@@ -1,0 +1,155 @@
+header {
+    text-align: center;
+    background-color: #4fc3f7;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+body {
+    background-color: #f2f9ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Clear 속성 사용 */
+.clearfix {
+    content: "";
+    display: block;
+    clear: left;
+}
+
+/* Pseudo-element */
+h1::first-letter {
+    color: #fff;
+    font-size: xx-large;
+}
+
+/* Pseudo-element */
+h1::first-line {
+    color: white;
+    font-size: small;
+}
+
+/* float 속성 사용 */
+img {
+    display: block;
+    margin: 0px auto;
+    width: 30%;
+    height: 30%;
+    border-radius: 10px;
+    margin-left: 50px;
+    float: left;
+}
+
+h2 {
+    text-align: center;
+    color: #1565c0;
+    margin-top: 20px;
+}
+
+form {
+    text-align: center;
+}
+
+/* attribute selector */
+select,
+input[type="date"],
+input[type="button"] {
+    width: 40%;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #4fc3f7;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* attribute selector */
+input[type="button"] {
+    background-color: #1565c0;
+    color: #fff;
+}
+
+footer {
+    background-color: #4fc3f7;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    padding: 3px;
+}
+
+.time-selection {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #4fc3f7;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #e3f2fd;
+}
+
+/* attribute selector */
+.time-selection input[type="radio"] {
+    margin-right: 20px;
+    accent-color: #1565c0;
+}
+
+/* combinator */
+form div {
+    margin-bottom: 20px;
+}
+
+/* combinator */
+label+input[type="radio"] {
+    margin: 10px;
+}
+
+/* Pseudo-class */
+input[type="button"]:hover {
+    color: #333;
+}
+
+/* Clear 속성 */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    img {
+        margin: 0px auto;
+        float: none;
+        width: 80%;
+    }
+
+    /* attribute selector */
+    select,
+    input[type="date"],
+    input[type="button"] {
+        width: 80%;
+    }
+
+    .time-selection {
+        width: 80%;
+    }
+
+    footer {
+        background-color: #4fc3f7;
+        color: #fff;
+        position: relative;
+        width: 100%;
+        bottom: 0;
+    }
+}

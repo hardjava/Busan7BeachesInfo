@@ -1,0 +1,151 @@
+body {
+    background-color: #f2f9ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    background-color: #4fc3f7;
+    padding: 10px;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 36px;
+}
+
+h2 {
+    text-align: center;
+    color: #1565c0;
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+#selected-beach,
+#selected-date,
+#selected-time {
+    text-align: center;
+    font-size: 18px;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    color: #1565c0;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+/* Pseudo-class */
+nav a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+}
+
+section h2 {
+    color: #1565c0;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* combinator */
+section>ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* combinator */
+section ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* combinator */
+section ul li:last-child {
+    border-bottom: none;
+}
+
+#map {
+    width: 100%;
+    height: 700px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #4fc3f7;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+}
+
+/* combinator */
+h2+#selected-beach,
+h2+#selected-date,
+h2+#selected-time {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 0 5px;
+    }
+
+    section {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #map {
+        height: 500px;
+    }
+
+    #selected-beach,
+    #selected-date,
+    #selected-time {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    body {
+        padding: 10px;
+    }
+}

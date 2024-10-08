@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부산 7대 해수욕장의 맛집 및 날씨 가이드</title>
+    <link rel="stylesheet" href="./css/mainStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/mainJS.js"></script>
+</head>
+
+<body>
+    <!-- header 사용 -->
+    <header>
+        <h1>부산 7대 해수욕장의 맛집 및 날씨 가이드</h1>
+    </header>
+    <img src="./img/beach.png" id="img1">
+    <h2>해수욕장과 날짜 선택</h2>
+    <form id="beach-form">
+        <div>
+            <label for="sel1">해수욕장을 선택하세요</label>
+            <select name="sel1" id="sel1" required>
+                <option value="" disabled selected>--선택--</option>
+                <option value="광안리">광안리</option>
+                <option value="해운대">해운대</option>
+                <option value="다대포">다대포</option>
+                <option value="송도">송도</option>
+                <option value="송정">송정</option>
+                <option value="일광">일광</option>
+                <option value="임랑">임랑</option>
+            </select>
+        </div>
+        <div>
+            <label for="date-select">여행 날짜를 선택하세요</label>
+            <!-- input type1 -->
+            <input type="date" id="date-select" required>
+        </div>
+        <div class="time-selection">
+            <label>여행 시간을 선택하세요</label><br>
+            <!-- input type2 -->
+            <label for="1100">11:00</label>
+            <input type="radio" id="1100" name="time" value="1100">
+            <label for="1400">14:00</label>
+            <input type="radio" id="1400" name="time" value="1400">
+            <label for="1700">17:00</label>
+            <input type="radio" id="1700" name="time" value="1700">
+            <label for="2000">20:00</label>
+            <input type="radio" id="2000" name="time" value="2000">
+        </div>
+        <!-- input type3 -->
+        <input type="button" class="clearfix" value="여행가기" onclick="passValue()" />
+    </form>
+    <!-- footer 사용 -->
+    <footer>
+        <p>&copy; 2024 부산 7대 해수욕장의 맛집 및 날씨 가이드</p>
+    </footer>
+</body>
+
+</html>

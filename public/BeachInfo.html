@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부산 7대 해수욕장의 맛집 및 날씨 가이드</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/beachInfoJS.js" defer></script>
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=63ec975766c28ea3bc4566821827133a"></script>
+    <link rel="stylesheet" href="./css/beachInfoStyle.css">
+</head>
+
+<body>
+    <!-- header 사용 -->
+    <header>
+        <h1> 맛집 및 날씨 가이드</h1>
+    </header>
+    <h2>선택한 해수욕장 정보</h2>
+    <p id="selected-beach"></p>
+    <p id="selected-date"></p>
+    <p id="selected-time"></p>
+    <!-- nav 사용 -->
+    <nav>
+        <a href="#s1">[ 날씨 ]</a>
+        <a href="#s2">[ 식당정보 ]</a>
+        <a href="#s3">[ 지도 ]</a>
+    </nav>
+    <section id="s1">
+        <h2>[ 날씨 ]</h2>
+        <p id="weather"></p>
+    </section>
+    <section id="s2">
+        <!-- List 사용 -->
+        <h2 class="restuarantName">[ 식당정보 ]</h2>
+        <ul>
+            <li class="streetAdress">도로명 주소</li>
+            <li class="address">지번 주소</li>
+            <li class="phoneNumber">전화번호</li>
+            <li class="foodType">영업신고증업태명</li>
+            <li class="restuarantType">영업인허가명</li>
+            <li class="introduce">소개</li>
+        </ul>
+    </section>
+    <section id="s3">
+        <h2>[ 지도 ]</h2>
+        <div id="map"></div>
+    </section>
+    <!-- footer 사용 -->
+    <footer>
+        <p>&copy; 2024 부산 7대 해수욕장의 맛집 및 날씨 가이드</p>
+    </footer>
+</body>
+
+</html>
